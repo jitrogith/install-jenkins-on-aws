@@ -3,6 +3,8 @@
 
 $ sudo -iu jenkins
 
+$ ssh-keygen -t rsa
+
 $ ssh root@<slave_ip> mkdir -p .ssh
 
 $ cat .ssh/id_rsa.pub | ssh root@<slave_ip> 'cat >> .ssh/authorized_keys'
