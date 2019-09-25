@@ -1,0 +1,21 @@
+Jenkins Installation Ubuntu 14.04/16.01 Please follow the steps given below. Switch to root user "sudo su -"
+
+$ sudo apt-get update
+
+$ sudo apt-get install default-jdk
+
+$ sudo apt-get install default-jre
+
+$ wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+
+$ echo deb https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list
+
+$ sudo apt-get update
+
+$ apt-get install jenkins
+
+
+Get jenkins Password from:- vi /var/lib/jenkins/secrets/initialAdminPassword Browse:- eg: {EC2-public-dns}:8080
+
+
+Happy Code !
